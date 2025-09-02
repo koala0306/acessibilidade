@@ -14,4 +14,12 @@ tamanhoAtualFonte -= 0.1;
 document.body.style.fonteSize = `${tamanhoAtualFonte}rem`
 })
 
+const botaoDeAcessibilidade = document.getElementById('boatao-acessibilidade');
+const opcoesDeAcessibilidade = this.documentElement.getElementById('opcoes-acessibilidade');
+
+botaoDeAcessibilidade.addEventListener('click', function(){
+    botaoDeAcessibilidade.classList.toggle('rotacao-botao');
+    opcoesDeAcessibilidade.classList.toggle('apresenta-lista')
+})
+
 })
